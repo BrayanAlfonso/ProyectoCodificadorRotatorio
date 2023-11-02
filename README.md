@@ -1,7 +1,8 @@
 # ProyectoCodificadorRotatorio
 # Integrantes:
-Brayan Estiven Alfonso Paloma
-Laura Vanessa Vega Tique
+* Brayan Estiven Alfonso Paloma.
+
+* Laura Vanessa Vega Tique.
 
 Este codigo consiste en utilizar el codificador rotatorio haciendo una prueba para que detecte la rotación del mismo y nos vaya imprimiendo en el monitor serial numeros del 0 al 100 empezando por el 50. Ahora la explicación del codigo, primero declaraos dos variables A y B, las cuales usaremos para el pin 2 y 4 respectivamente, posteriormente declaramos una variable llamada anterior que usaremos para guardar el ultimo valor almacenado en la variable posicion, estara por defeco en 50 y por ultimo declaramos la variable Posicion la cual servira para saber la posicion en la que se encuetra el codificador rotatorio iniciando en la posicion 50, la declaramos como volatile para hacerla global y poderla usar en todo el codigo. Ahora en el setup creamos con el pinMode los pines A y B que ambos seran como entrada y también creamos el monitor serial, posetriormente hacemos un attachInterrupt en el que especificamos que en el momento en el cual el pin A se vea interrumpido por el giro del codificador es decir su voltaje sea LOW, se ejectura la funcion encoder e imprimiremos en el monitor serial "Listo".
 
